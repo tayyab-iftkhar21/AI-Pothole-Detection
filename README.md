@@ -1,34 +1,34 @@
-Pothole Detection using YOLOv8
+**Pothole Detection using YOLOv8**
 
 This repository contains a pothole detection system developed using the YOLOv8 object detection framework. The model is designed to automatically identify and locate potholes in road images and video streams, helping improve road inspection, maintenance planning, and transportation safety.
 
-Model Overview
+**Model Overview**
 
 The project is based on the YOLOv8 architecture, a modern real-time object detection model known for its speed and accuracy. The model predicts pothole locations by generating bounding boxes and confidence scores for detected objects.
 
-Dataset
+**Dataset**
 
 The model was trained on a collection of road images containing different road surfaces, lighting conditions, and pothole variations. Each pothole instance was manually annotated with bounding boxes to create high-quality training labels.
 
-Training Process
+**Training Process**
 
 The model development involved the following stages:
 
-1. Data Preparation
+**1. Data Preparation**
 Resized images to a consistent input resolution.
 Normalized image data for efficient learning.
 Applied augmentation techniques such as horizontal flipping, rotation, and scaling to improve model robustness.
-2. Model Initialization
+**2. Model Initialization**
 Initialized YOLOv8 with pre-trained weights to leverage transfer learning.
 Used existing learned features to accelerate convergence and improve detection performance.
-3. Model Training
+**3. Model Training**
 Trained the network on annotated pothole images.
 Optimized detection, classification, and localization losses during training.
 Monitored training and validation performance to reduce overfitting.
-4. Hyperparameter Optimization
+**4. Hyperparameter Optimization**
 Experimented with learning rates, batch sizes, and training epochs.
 Selected the configuration that provided the best balance between accuracy and efficiency.
-5. Performance Evaluation
+**5. Performance Evaluation**
 Evaluated the model using industry-standard metrics including:
 Mean Average Precision (mAP)
 Intersection over Union (IoU)
