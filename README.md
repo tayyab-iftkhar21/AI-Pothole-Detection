@@ -21,13 +21,16 @@ Applied augmentation techniques such as horizontal flipping, rotation, and scali
 **2. Model Initialization**
 Initialized YOLOv8 with pre-trained weights to leverage transfer learning.
 Used existing learned features to accelerate convergence and improve detection performance.
+
 **3. Model Training**
 Trained the network on annotated pothole images.
 Optimized detection, classification, and localization losses during training.
 Monitored training and validation performance to reduce overfitting.
+
 **4. Hyperparameter Optimization**
 Experimented with learning rates, batch sizes, and training epochs.
 Selected the configuration that provided the best balance between accuracy and efficiency.
+
 **5. Performance Evaluation**
 Evaluated the model using industry-standard metrics including:
 Mean Average Precision (mAP)
